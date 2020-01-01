@@ -56,7 +56,7 @@ While running/developing locally, thw `npm run start` command will recompile the
 
 ### Global CSS utilities.
 
-A small number of bespoke CSS rules are provided for efficiency of repeated or global classes. These reside in `src/css/tailwind.css`
+A small number of bespoke CSS rules are provided for efficiency of repeated or global classes. These reside in `src/site/_includes/css/tailwind.css`
 
 
 ## Just clone and go
