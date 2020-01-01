@@ -39,6 +39,7 @@ module.exports = function(eleventyConfig) {
   // Static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/fonts");
   eleventyConfig.addPassthroughCopy("./src/site/images");
+  eleventyConfig.addPassthroughCopy("./src/site/css");
 
   return  {
     dir: {

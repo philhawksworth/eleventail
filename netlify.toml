@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  # functions = "./src/functions"
 
 [context.production]
   environment = { NODE_VERSION = "10.15.3", NODE_ENV = "production" }
@@ -9,9 +10,11 @@
 [dev]
   command = "npm run start"
   publish = "dist"
-  NODE_ENV = "dev"
+  port = 3000
+  targetPort = 8181
+  NODE_ENV = "development"
+  # functionsPort = 34567
 
 [[redirects]]
-  from = "/post*"
-  to = "/blog:splat"
-  status = 302
+  from = "/post/*"
+  to = "/blog/:splat"

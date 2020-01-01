@@ -10,14 +10,14 @@
   },
   "scripts": {
     "build": "npm-run-all build:css build:html",
-    "build:css": "postcss src/css/tailwind.css -o dist/css/styles.css",
+    "build:css": "postcss src/site/_includes/css/tailwind.css -o src/site/css/styles.css",
     "build:js": "",
     "build:html": "eleventy",
     "watch": "npm-run-all --parallel watch:css watch:html",
-    "watch:css": "postcss src/css/tailwind.css -o dist/css/styles.css --watch",
-    "watch:html": "eleventy --watch",
+    "watch:css": "postcss src/site/_includes/css/tailwind.css -o src/site/css/styles.css --watch",
+    "watch:html": "eleventy --serve --port=8181",
     "serve": "live-server dist",
-    "start": "npm-run-all --parallel watch serve"
+    "start": "npm run watch"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.9.0",
