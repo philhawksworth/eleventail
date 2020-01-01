@@ -1,0 +1,21 @@
+---
+layout: default
+pageClass: posts
+templateEngineOverride: njk, md
+---
+<section>
+  <time value="{{ item.date }}" class="text-gray-600">{{ date | readableDate }}</time>
+  <h1 class="heading">{{ title }}</h1>
+  <div class="mb-4 text-lg font-medium">
+    {{ content | section | safe }}
+  </div>
+  <div>
+    {{ content | section('remainder') | safe }}
+  </div>
+  <div class="mt-12 pt-4 text-gray-600 text-sm border-t border-gray-300">
+    <p>
+      This page is part of the <a href="/blog">blog</a> section.
+    </p>
+  </div>
+</section>
+

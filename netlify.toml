@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  NODE_VERSION = "10.15.3"
+  NODE_ENV = "production"
+
+[dev]
+  command = "npm run start"
+  publish = "dist"
+  NODE_ENV = "dev"
+
+[[redirects]]
+  from = "/post*"
+  to = "/blog:splat"
+  status = 302

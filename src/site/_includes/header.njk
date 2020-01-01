@@ -1,0 +1,21 @@
+
+<header class="bg-teal-500 flex justify-between px-4 py-2 mb-10">
+  {% if page.url == "/" %}
+  <h1 class=" text-white font-medium text-2xl">O RLY?</h1>
+  {% else %}
+  <h1 class=" text-white font-medium text-2xl"><a href="/">ElevenTail <small class="text-sm">a site scaffold</small></a></h1>
+  {% endif %}
+  <nav>
+    {%
+      set linkList = [
+        { "url": "/about" , "text": "About"},
+        { "url": "/blog" , "text": "Blog"},
+        { "url": pkg.repository.url , "text": "GitHub"}
+      ]
+    %}
+    {% include "navigation-links.njk" %}
+  </nav>
+</header>
+
+
+

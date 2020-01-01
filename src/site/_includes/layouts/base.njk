@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>{{ title }}</title>
+    {% include "social.njk" %}
+  </head>
+  <body class="container mx-auto mb-12 lg:max-w-4xl text-gray-700">
+    {% include "header.njk" %}
+    <div class="content leading-relaxed">
+      {{ content | safe }}
+    </div>
+    {% set js %}
+      {% include "js/core.js" %}
+      {% include "js/hello.js" %}
+    {% endset %}
+    <script>{{ js | jsmin | safe }}</script>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,7 @@
+    <li class="mt-6">
+      <time value="{{ item.date }}" class="text-gray-600">{{ item.date | readableDate }}</time>
+      <h4 class="text-lg font-bold"><a href="{{ item.url }}">{{ item.data.title }}</a></h4>
+      <div class="">
+      {{ item.templateContent | section | safe }}
+      </div>
+    </li>

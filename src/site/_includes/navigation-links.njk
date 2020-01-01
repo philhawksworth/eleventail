@@ -1,0 +1,10 @@
+
+<ul class="flex items-row">
+  {% for link in linkList %}
+    <li class="pr-1">
+      <a href="{{ link.url }}" class="nav-tab">
+        {{ link.text }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

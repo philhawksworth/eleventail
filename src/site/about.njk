@@ -1,0 +1,59 @@
+---
+title: ElevenTail - About
+layout: default
+---
+
+<section>
+  <h1 class="heading">What does ElevenTail give me?</h1>
+  <p>
+    ElevenTail is the starting point <a href="https://twitter.com/philhawksworth">that I use</a> when building a site where I want to have:
+  </p>
+  <ul>
+    <li><a href="https://11ty.dev">Eleventy</a> for site generation configured with some common conventions like <a href="/blog">blog</a> collection</li>
+    <li><a href="https://tailwindcss.com">Tailwind CSS</a> for a utility-based CSS pipeline</li>
+    <li><a href="https://www.purgecss.com/">Purge CSS</a> for stripping unused CSS and minifying the result</li>
+    <li><a href="https://www.npmjs.com/package/uglify-js">Uglify JS</a> for basic JavaScript build pipeline</li>
+    <li>Serverless functions development pipeline via <a href="https://netlify.com/product/functions">Netlify Functions</a></li>
+    <li>Local support of <a href="https://netlify.com/product/edge">Netlify CDN</a> abilities such as <a href="https://docs.netlify.com/routing/redirects/redirect-options/">redirects</a> and <a href="https://docs.netlify.com/routing/headers">custom headers</a></li>
+  </ul>
+  <p>
+    ElevenTail is not a product, it's just something I maintain to use for myself. If you think it might be useful to you too, then great! Suggestions and contributions as pull requests are also welcome.
+  </p>
+</section>
+
+<section>
+  <h1 class="heading">How do I use it?</h1>
+  <p>To get started using ElevenTail for a site of your own:</p>
+  <ol>
+    <li>Initiate a new project from this GitHub Template</li>
+    <li>Clone a copy to your local machine: <code>git clone YOUR_REPO_URL</code></li>
+    <li>Install the dependencies: <code>npm install</code> </li>
+    <li>Run the local build environment: <code>netlify dev</code></li>
+  </ol>
+  <p>This will give you a local build and a local server which detects changes to give live rebuilds and reloads.</p>
+  <p>If you are planning to deploy your site to Netlify, you will also automatically get local support for the Netlify redirects API by running your local build with the command <code>netlify dev</code>.</p>
+</section>
+
+<section>
+  <h1 class="heading">Super speedy start</h1>
+  <p>
+    To create and deploy a new site from this template, and then start customising, you can click the button below which will:
+  </p>
+  <ul>
+    <li>Clone <a href="{{ pkg.repository.url }}">this repo</a> to a new repo in your own GitHub account</li>
+    <li>Create a new Netlify site linked to your new repo</li>
+    <li>Set up a CI/CD pipeline for your new site</li>
+  </ul>
+  <a class="bg-teal-500 p-4 mb-6 inline-block font-semibold border-b-2 text-white rounded shadow-lg hover:bg-teal-400" href="https://app.netlify.com/start/deploy?repository={{ pkg.repository.url }}">Clone and set up a new site on Netlify</a>
+  <p>
+    This is the process I use to get a new site with all of its deployment and hosting set up as quickly as possible.
+  </p>
+</section>
+
+<section>
+    <h1 class="heading" id="possum">What the possum?</h1>
+    <p>
+      The possum became a playful mascot for Eleventy thanks to the wonderful James Williamson. He and Zach Leatherman,   Eleventy's creator, shared a playful sense of humor which culminated in this marvelously silly icon. Following the sad loss of James, <a href="https://www.11ty.dev/news/logo-homage/">Zach commissioned</a> a more formal possum illustration who's reminiscence of an O'Reilly book cover illustration inspired the design of this little site.
+    </p>
+    <img src="/images/possum-balloon.png" alt="The Elventy Possum Balloon" class="w-24 mt-6">
+  </section>
