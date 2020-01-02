@@ -9,6 +9,9 @@ A project scaffold for quickly starting a site build with:
 - [Netlify CLI](https://www.npmjs.com/package/netlify-cli) for Netlify dev pipeline and local replication of prod environment
 
 
+![Deploy to Netlify](eleventail-screenshot.jpg)
+
+
 ## Example
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4151ca40-1788-4959-9367-38ad71d11492/deploy-status)](https://app.netlify.com/sites/eleventail/deploys)
