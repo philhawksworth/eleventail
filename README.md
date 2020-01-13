@@ -55,7 +55,7 @@ npm run build
 
 This site uses TailwindCSS to offer utility CSS classes and provide a rapid means to styling the site. This means that most styling can be done without writing any additional CSS. Instead, utility classes can be added directly to the HTML. This may not be to everyone's tastes, but it can provide some very rapid development and also offer surprising levels of familiarity for those used to working in this way (since the conventions and classes are not _per site_.)
 
-While running/developing locally, thw `npm run start` command will recompile the site as files are saved and this includes the CSS pipeline from Tailwind.
+While running/developing locally, the `npm run start` command will recompile the site as files are saved and this includes the CSS pipeline from Tailwind.
 
 ### Global CSS utilities.
 
