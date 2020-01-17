@@ -44,7 +44,7 @@ module.exports = function(eleventyConfig) {
   return  {
     dir: {
       input: "src/site",
-      inludes: "_includes",
+      includes: "_includes",
       output: "dist"
     },
     passthroughFileCopy: true,
