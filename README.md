@@ -64,7 +64,7 @@ A small number of bespoke CSS rules are provided for efficiency of repeated or g
 
 ## Just clone and go
 
-You can also get started with your own copy of this site cloned to your GitHub account and deployed to Netlify with a configured CI/CD pipeline and HTTPS by clicking the button below and following the instructions.
+You can also get started with your own copy of this site cloned to your GitHub account and deployed to [Netlify](http://netlify.com/?utm_source=github&utm_medium=eleventail-pnh&utm_campaign=devex) with a configured CI/CD pipeline and HTTPS by clicking the button below and following the instructions.
 
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/eleventail)
