@@ -9,6 +9,7 @@
 
 [dev]
   command = "npm run start"
+  framework = "#custom"
   publish = "dist"
   port = 3000
   targetPort = 8181
