@@ -1,102 +1,101 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* purgecss start ignore */
-@tailwind  base;
-/* purgecss end ignore */
+@layer base {
+  /*
+    Content sections conventions
+  */
+  section {
+    @apply pb-10;
+    @apply px-4;
+  }
+  p+p {
+    @apply mt-4;
+  }
 
-/*
-  Content sections conventions
-*/
-section {
-  @apply pb-10;
-  @apply px-4;
-}
-p+p {
-  @apply mt-4;
-}
-
-/*
-  Global headings conventions
-*/
-h1.heading {
-  @apply text-3xl;
-  @apply text-gray-900;
-  @apply mb-4;
-  @apply font-semibold;
-}
-@screen md {
+  /*
+    Global headings conventions
+  */
   h1.heading {
     @apply text-3xl;
+    @apply text-gray-900;
+    @apply mb-4;
+    @apply font-semibold;
+  }
+  @screen md {
+    h1.heading {
+      @apply text-3xl;
+    }
+  }
+
+  /*
+    Base styles for links
+  */
+  a {
+    @apply border-b-2;
+    @apply border-teal-400;
+  }
+  a:hover,
+  a:focus {
+  @apply border-b-2;
+  @apply border-teal-200;
+  }
+  a.naked-link:link,
+  a.naked-link:visited {
+    @apply border-0;
+  }
+
+  .content ul,
+  .content ol {
+    @apply my-6;
+  }
+  .content li {
+    @apply list-disc;
+    @apply ml-6;
+  }
+  .content ol li {
+    @apply list-decimal;
+    @apply pl-2;
+  }
+
+  code {
+    @apply bg-gray-200;
+    @apply text-sm;
+    @apply p-1;
+    @apply rounded;
+  }
+
+  /*
+    Navigation links
+  */
+  .nav-tab {
+    @apply inline-block;
+    @apply text-white;
+    @apply font-semibold;
+    @apply px-4;
+    @apply py-2;
+    @apply border-b-0;
+    @apply rounded;
+  }
+  .nav-tab:hover {
+    @apply bg-white;
+    @apply text-teal-500;
+    @apply border-b-0;
+  }
+
+
+  .filter-bw-800 {
+    filter: grayscale(0.8);
+  }
+
+  .mb--2 {
+    margin-bottom: -0.5rem;
+  }
+  .mb--4 {
+    margin-bottom: -1rem;
   }
 }
-
-/*
-  Base styles for links
-*/
-a {
-  @apply border-b-2;
-  @apply border-teal-400;
-}
-a:hover,
-a:focus {
- @apply border-b-2;
- @apply border-teal-200;
-}
-a.naked-link:link,
-a.naked-link:visited {
-  @apply border-0;
-}
-
-.content ul,
-.content ol {
-  @apply my-6;
-}
-.content li {
-  @apply list-disc;
-  @apply ml-6;
-}
-.content ol li {
-  @apply list-decimal;
-  @apply pl-2;
-}
-
-code {
-  @apply bg-gray-200;
-  @apply text-sm;
-  @apply p-1;
-  @apply rounded;
-}
-
-/*
-  Navigation links
-*/
-.nav-tab {
-  @apply inline-block;
-  @apply text-white;
-  @apply font-semibold;
-  @apply px-4;
-  @apply py-2;
-  @apply border-b-0;
-  @apply rounded;
-}
-.nav-tab:hover {
-  @apply bg-white;
-  @apply text-teal-500;
-  @apply border-b-0;
-}
-
-
-.filter-bw-800 {
-  filter: grayscale(0.8);
-}
-
-.mb--2 {
-  margin-bottom: -0.5rem;
-}
-.mb--4 {
-  margin-bottom: -1rem;
-}
-
-/* purgecss start ignore */
-@tailwind  components;
 /* purgecss end ignore */
-
-@tailwind utilities;
